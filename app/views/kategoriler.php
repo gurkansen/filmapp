@@ -23,32 +23,20 @@
 
         <div class="list-block">
           <ul>
+
+            <?php foreach(kategori_listele() as $kategori) { ?>
+
             <li>
               <div class="item-content">
-                <div class="item-media"><i class="icon icon-f7"></i></div>
+                <div class="item-media"><i class="fa <?=$kategori['kategori_ikon']?> fa-2x"></i></div>
                 <div class="item-inner">
-                  <div class="item-title">Ivan Petrov</div>
-                  <div class="item-after">CEO</div>
+                  <div class="item-title"><?=$kategori['kategori_adi']?></div>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="item-content">
-                <div class="item-media"><i class="icon icon-f7"></i></div>
-                <div class="item-inner">
-                  <div class="item-title">John Doe</div>
-                  <div class="item-after"> <span class="badge">5</span></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-content">
-                <div class="item-media"><i class="icon icon-f7"></i></div>
-                <div class="item-inner">
-                  <div class="item-title">Jenna Smith</div>
-                </div>
-              </div>
-            </li>
+
+            <?php } ?>
+
           </ul>
         </div>
 

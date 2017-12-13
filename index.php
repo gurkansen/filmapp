@@ -1,4 +1,4 @@
-<?php include("./app/source/connect.php"); ?>
+<?php include("./app/source/functions.php"); ?>
 
 <!DOCTYPE html>
 <html>
