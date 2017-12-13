@@ -1,3 +1,5 @@
+<?php include("./app/source/connect.php"); ?>
+
 <!DOCTYPE html>
 <html>
   <head>
