@@ -16,7 +16,7 @@
     <div data-page="media-lists" class="page">
       <div class="page-content">
 
-        <div class="profil-resmi">
+        <div class="profil-info">
           <img src="https://pbs.twimg.com/profile_images/708037743599874048/FgiS8VxX_400x400.jpg" alt="">
 
           <h1>Gürkan Şen</h1>
