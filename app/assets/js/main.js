@@ -30,3 +30,15 @@ var view1 = myApp.addView('#anasayfa', {
   dynamicNavbar: true,
   domCache: true,
 });
+
+$(document).ready(function () {
+
+  $('.button').on('click', function(event) {
+
+    $('.button').css('display','none');
+    alert('erik dalı gevrektir');
+
+
+  })
+
+});

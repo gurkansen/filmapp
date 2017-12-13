@@ -3,12 +3,15 @@
   <div class="navbar">
     <div class="navbar-inner">
       <div class="left sliding">
-        <a href="#" data-ignore-cache="true" class="link icon-only">
-          <i class="f7-icons">persons</i>
-        </a>
       </div>
       <div class="center sliding">Ana Sayfa</div>
-      <div class="right"></div>
+      <div class="right">
+
+        <a href="#" data-popup=".ekle-popup" class="link icon-only open-popup">
+          <i class="f7-icons">add_round</i>
+        </a>
+
+      </div>
     </div>
   </div>
 

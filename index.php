@@ -45,6 +45,62 @@
         </div>
       </div>
 
+
+      <div class="popup ekle-popup">
+        <div class="view navbar-fixed">
+          <div class="pages">
+            <div class="page">
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="center">Favori Filmini Ekle</div>
+                  <div class="right"><a href="#" class="link icon-only close-popup"><i class="f7-icons">close_round</i></a></div>
+                </div>
+              </div>
+              <div class="page-content">
+                <div class="content-block">
+
+                  <form class="" action="" method="post">
+
+
+                    <label for="">Film seçiniz</label><br>
+                    <div class="item-input">
+
+                      <select name="film">
+
+                        <?php foreach (film_listele() as $film) { ?>
+
+
+                          <option value="<?=$film['film_id']?>"><?=$film['film_adi']?></option>
+
+
+                        <?php } ?>
+
+
+                      </select>
+                    </div>
+
+
+                    <label for="">Film Puanınız</label><br>
+                    <div class="item-input">
+
+                      <select name="puan">
+                        <?php for($i = 1; $i <= 10; $i++) { ?>
+                        <option value="<?=$i?>"><?=$i?></option>
+                        <?php } ?>
+                      </select>
+                    </div>
+
+                    <input type="submit" class="button button-big active" name="" value="Filmlerime Ekle">
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <script type="text/javascript" src="app/assets/js/framework7.min.js"></script>

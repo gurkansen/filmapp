@@ -1,13 +1,33 @@
 <?php
 include("./app/source/connect.php");
 
-// $db->query("INSERT INTO filmler SET film_adi = 'Yüzüklerin Efendisi'");
+
+function puan_ver() {
+
+  global $db;
+
+  $film_id = $_POST['film'];
+  $puan = $_POST['puan'];
+
+  $query = $db->prepare("INSERT INTO film_uye SET
+    uye_id = ?, film_id = ?, puan = ?");
+
+  $query->execute(array(1, $film_id, $puan));
+
+}
+
+if (isset($_POST['film'])) {
+
+  puan_ver();
+
+}
+
 
 function film_listele() {
 
   global $db;
 
-  $query = $db->query("SELECT * FROM filmler f
+  $query = $db->query("SELECT *, f.id as film_id FROM filmler f
   JOIN kategoriler k ON f.kategori = k.id");
   $rows = $query->fetchAll();
 

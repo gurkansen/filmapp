@@ -8,3 +8,11 @@
   height: 164px;
   border-radius: 100%;
 }
+
+.item-input {
+  width: calc(100% - 20px);
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
