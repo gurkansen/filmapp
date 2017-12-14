@@ -3,11 +3,9 @@
   <div class="navbar">
     <div class="navbar-inner">
       <div class="left sliding">
-        <a href="#" data-ignore-cache="true" class="link icon-only">
-          <i class="f7-icons">persons</i>
-        </a>
+
       </div>
-      <div class="center sliding">Ana Sayfa</div>
+      <div class="center sliding">Kategoriler</div>
       <div class="right"></div>
     </div>
   </div>

@@ -33,7 +33,7 @@
                 <div class="item-inner">
                   <div class="item-title-row">
                     <div class="item-title"><?=$film['film_adi']?></div>
-                    <div class="item-after">$15</div>
+                    <div class="item-after"><i class="fa fa-star"></i> 4.1</div>
                   </div>
                   <div class="item-subtitle"><?=$film['kategori_adi']?></div>
                   <div class="item-text"><?=$film['film_hakkinda']?></div>

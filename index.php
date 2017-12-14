@@ -17,7 +17,7 @@
   </head>
   <body>
 
-    <div class="statusbar-overlay" style="background-color: #ff9300;"></div>
+    <div class="statusbar-overlay" style="background-color: #fff;"></div>
     <div class="panel-overlay"></div>
 
     <div class="views tabs toolbar-through" id="app">
@@ -59,7 +59,7 @@
               <div class="page-content">
                 <div class="content-block">
 
-                  <form class="" action="" method="post">
+                  <form class="ekle-form" action="" method="post">
 
 
                     <label for="">Film seçiniz</label><br>
@@ -90,7 +90,8 @@
                       </select>
                     </div>
 
-                    <input type="submit" class="button button-big active" name="" value="Filmlerime Ekle">
+                    <button id="puan-ver-btn" class="button button-big active"
+                    type="button" name="button" style="width:100%">Filme Puan Ver</button>
 
                   </form>
 

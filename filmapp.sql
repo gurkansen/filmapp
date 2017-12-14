@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: localhost
--- Üretim Zamanı: 13 Ara 2017, 19:30:11
+-- Üretim Zamanı: 14 Ara 2017, 12:13:05
 -- Sunucu sürümü: 10.1.28-MariaDB
 -- PHP Sürümü: 7.1.11
 
@@ -43,9 +43,12 @@ CREATE TABLE `filmler` (
 --
 
 INSERT INTO `filmler` (`id`, `film_adi`, `film_afis`, `film_hakkinda`, `yonetmen`, `kategori`, `olusturuldu`) VALUES
-(1, 'Inception', 'https://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/inception_keyart.jpg?itok=7jXiglyb', 'Başlangıç (İng: Inception), Christopher Nolan tarafından yazılan ve yönetilen bilim kurgu türündeki ABD filmidir. 8 Temmuz 2010 tarihinde İngiltere prömiyeri yapılmıştır.[1] Film yayınlanmasından kısa bir süre sonra son 25 yılın en iyi filmleri arasında gösterilmiştir.', 1, 3, '2017-12-13 16:53:51'),
+(1, 'Inception', 'https://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/inception_keyart.jpg?itok=7jXiglyb', 'Başlangıç (İng: Inception), Christopher Nolan tarafından yazılan ve yönetilen bilim kurgu türündeki ABD filmidir. 8 Temmuz 2010 tarihinde İngiltere prömiyeri yapılmıştır.[1] Film yayınlanmasından kısa bir süre sonra son 25 yılın en iyi filmleri arasında gösterilmiştir.', 1, 6, '2017-12-13 16:53:51'),
 (2, 'Harry Potter', 'https://vignette.wikia.nocookie.net/harrypotter/images/9/9d/Harry-Potter-Wizarding-World-Weekly.jpg/revision/latest/scale-to-width-down/670?cb=20160914202759', 'Harry Potter, İngiliz yazar J.K. Rowling tarafından yedi kitap hâlinde yazılan fantastik roman serisi ve bu kitaplardan uyarlanan film serisi. Dünya çapında elde ettiği başarı ve yakaladığı satış rakamlarıyla çığır açmayı başarmış ve edebiyat tarihine geçmiştir. Harry Potter serisinin yedinci kitabı piyasaya çıktığı ilk gün ABD\'de 8,5 milyonun üzerinde bir satış rakamı yakalayarak erişilmesi güç bir rekora imza atmıştır', 2, 5, '2017-12-13 16:53:51'),
-(5, 'Captain America', 'http://www.cizgiromanvadisi.com/images/haber/3477180.jpg', 'http://www.cizgiromanvadisi.com/images/haber/3477180.jpg', 3, 6, '2017-12-13 17:34:29');
+(5, 'Captain America', 'http://www.cizgiromanvadisi.com/images/haber/3477180.jpg', 'http://www.cizgiromanvadisi.com/images/haber/3477180.jpg', 3, 3, '2017-12-13 17:34:29'),
+(6, 'The Godfather', 'http://images.mentalfloss.com/sites/default/files/styles/mf_image_3x2/public/godfather.png?itok=CzRtfsbE&resize=1100x740', '...', 4, 2, '2017-12-14 11:03:32'),
+(7, 'Interstellar', 'https://i.ytimg.com/vi/Df7IEKqimOY/movieposter.jpg', 'https://i.ytimg.com/vi/Df7IEKqimOY/movieposter.jpg ...', 6, 6, '2017-12-14 11:03:32'),
+(8, 'Toy Story', 'http://1075koolfm.com/wp-content/uploads/2017/11/v1.aDszODA1O2o7MTc1MDU7MTIwMDs2NTU7NjUy.jpg', 'http://1075koolfm.com/wp-content/uploads/2017/11/v1.aDszODA1O2o7MTc1MDU7MTIwMDs2NTU7NjUy.jpg', 1, 10, '2017-12-14 11:04:49');
 
 -- --------------------------------------------------------
 
@@ -59,19 +62,6 @@ CREATE TABLE `film_uye` (
   `film_id` int(11) NOT NULL,
   `puan` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Tablo döküm verisi `film_uye`
---
-
-INSERT INTO `film_uye` (`id`, `uye_id`, `film_id`, `puan`) VALUES
-(5, 1, 2, 8),
-(6, 1, 1, 1),
-(7, 1, 1, 1),
-(8, 1, 1, 1),
-(9, 1, 1, 1),
-(10, 1, 1, 1),
-(11, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -161,13 +151,13 @@ ALTER TABLE `uyeler`
 -- Tablo için AUTO_INCREMENT değeri `filmler`
 --
 ALTER TABLE `filmler`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `film_uye`
 --
 ALTER TABLE `film_uye`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `kategoriler`

@@ -2,13 +2,20 @@
 
   <div class="navbar">
     <div class="navbar-inner">
-      <div class="left sliding">
-        <a href="#" data-ignore-cache="true" class="link icon-only">
-          <i class="f7-icons">persons</i>
-        </a>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left sliding">
+          </div>
+          <div class="center sliding">Gürkan Şen</div>
+          <div class="right">
+
+            <a href="#" data-popup=".ekle-popup" class="link icon-only open-popup">
+              <i class="f7-icons">add_round</i>
+            </a>
+
+          </div>
+        </div>
       </div>
-      <div class="center sliding">Ana Sayfa</div>
-      <div class="right"></div>
     </div>
   </div>
 
@@ -26,7 +33,7 @@
           Üyenin Favori Filmleri
         </div>
 
-        <div class="list-block media-list">
+        <div class="list-block media-list load-me">
           <ul>
 
             <?php foreach (uyenin_filmleri(1) as $film) { ?>
@@ -37,7 +44,7 @@
                 <div class="item-inner">
                   <div class="item-title-row">
                     <div class="item-title"><?=$film['film_adi']?></div>
-                    <div class="item-after">$15</div>
+                    <div class="item-after"><i class="fa fa-star"></i> <?=$film['puan']?></div>
                   </div>
                   <div class="item-subtitle"><?=$film['kategori_adi']?></div>
                   <div class="item-text"><?=$film['film_hakkinda']?></div>
